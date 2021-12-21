@@ -1,11 +1,18 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QB-Shops'
-version '1.0.0'
+author 'BLVCKLISTED'
+description 'qb-buds for QBCore - A target-based shop system'
+version '2.2.0'
 
-shared_script 'config.lua'
-client_script 'client/main.lua'
-server_script 'server/main.lua'
+shared_scripts {
+    'config.lua',
+    --'@qb-core/import.lua'
+}
 
-lua54 'yes'
+client_scripts {
+	'client/main.lua',
+	'client/menus.lua'
+}
+
+server_script 'server/*.lua'
